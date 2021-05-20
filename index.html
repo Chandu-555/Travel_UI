@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://kit.fontawesome.com/98620abe39.js" crossorigin="anonymous"></script>
+    <title>Travel Landing Page</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Travel</h2>
+            <div class="toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </header>
+
+        <video src="video/background.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quis, eveniet velit consectetur, possimus
+                soluta tempora vitae aliquid at sed reprehenderit iure. Iste! </p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+
+            <li> <a href="#"><i class="fa fa-facebook"></i></a> </li>
+
+            <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+
+            <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li> <a href="#">News</a></li>
+            <li> <a href="#">Destination</a></li>
+            <li> <a href="#">Blog</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+
+        menuToggle.addEventListener('click', () => {
+              menuToggle.classList.toggle('active')
+              showcase.classList.toggle('active')
+        })
+    </script>
+    
+</body>
+
+</html>
